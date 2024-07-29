@@ -3,6 +3,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import NavigationBar from './NavigationBar/NavigationBar';
 import MainSection from './MainSection/MainSection';
 import News from './MainSection/News';
+import Promotion from './MainSection/Promotion';
 
 const useStyles = makeStyles(() => ({
   root: {},
@@ -16,6 +17,7 @@ export default function Home(props) {
       <NavigationBar />
       <MainSection />
       <News />
+      <Promotion />
     </div>
   );
 }

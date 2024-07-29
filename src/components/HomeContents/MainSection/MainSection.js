@@ -215,6 +215,18 @@ const useStyles = makeStyles(() => ({
       marginLeft: "0",
       top: "1.5em",
     },
+    "@media (max-width: 651px)": {
+      display: 'none',
+    }
+  },
+  mainButton2: {
+    display: 'none',
+
+    "@media (max-width: 651px)": {
+      display: "block",
+      marginLeft: "0",
+      top: "-1.2em",
+    },
   },
   phoneImage: {
     display: "contents",
@@ -265,10 +277,16 @@ const useStyles = makeStyles(() => ({
       letterSpacing: "0.5px",
       height: "40px",
     },
+    "@media (min-width: 351px)": {
+      width: "260px",
+      fontSize: "12px",
+      lineHeight: "15px",
+      margin: 'auto',
+    },
   },
   smallView: {
     "@media (min-width: 651px)": {
-      display: 'none',
+      display: "none",
     },
   },
 }));
@@ -313,9 +331,7 @@ export default function MainSection() {
             with Inito, the all-in-one fertility monitor.
           </h6>
           <div class={classes.mainButton}>
-            <a
-              href="#only-fertility-kit"
-            >
+            <a href="#only-fertility-kit">
               <Button text={"How does Inito work?"} classes={classes} />
             </a>
           </div>
@@ -331,6 +347,11 @@ export default function MainSection() {
           />
         </div>
       </div>
+      <div class={classes.mainButton2}>
+            <a href="#only-fertility-kit">
+              <Button text={"How does Inito work?"} classes={classes} />
+            </a>
+          </div>
     </div>
   );
 }
